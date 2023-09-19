@@ -1,0 +1,44 @@
+<odoo>
+    <!-- <record id="estate_property_website_action" model="ir.actions.act_window">
+        <field name="name">Properties</field>
+        <field name="res_model">academy.teachers</field>
+        <field name="view_mode">kanban</field>
+    </record> -->
+
+
+    <!-- <record id="estate_property_view_kanban" model="ir.ui.view">
+        <field name="name">estate.property_kanban</field>
+        <field name="model">academy.teachers</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by = 'property_id' draggable="false">
+
+            </kanban>
+        </field>
+    </record> -->
+
+    
+    <template id="index">
+        <t t-call="website.layout">
+            <t t-set="title">Real Estate Website</t>
+            <div class="oe_structure">
+                <div class="container">
+                    <t t-foreach="teachers" t-as="teacher">
+                        <p><t t-esc="teacher.id"/> <t t-esc="teacher.name"/></p>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    
+
+
+
+    <!-- <menuitem id="estate_website_menu_root" name="Real Estate Website">
+        <menuitem id="estate_website_first_level_menu" name="Estate">
+            <menuitem id="estate_model_website_menu_action" name="Properties" action="estate_property_website_action"/>
+        </menuitem>
+
+    </menuitem> -->
+
+</odoo>

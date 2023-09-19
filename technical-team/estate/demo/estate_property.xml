@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="estate_id1" model="estate.property">
+      <field name="name">Big Villa</field>
+      <field name="state">new</field>
+      <field name="description">A nice and Big villa </field>
+      <field name="postcode">12345</field>
+      <field name="date_availability">2023-08-22</field>
+      <field name="expected_price">1600000</field>
+      <field name="bedrooms">6</field>
+      <field name="living_area">100</field>
+      <field name="facades">4</field>
+      <!-- <field name="garage">True</field> -->
+      <field name="orientation">north</field>
+      <field name="garden">True</field>
+      <field name="garden_area">100000</field>
+    </record>
+  
+    <record id="estate_id2" model="estate.property">
+        <field name="name">Trailer Home</field>
+        <field name="state">cancelled</field>
+        <field name="description">Home in a trailer park </field>
+        <field name="postcode">54321</field>
+        <field name="date_availability">2002-08-22</field>
+        <field name="expected_price">100000</field>
+        <field name="selling_price">120000</field>
+        <field name="bedrooms">1</field>
+        <field name="living_area">10</field>
+        <field name="facades">4</field>
+    </record> 
+
+    <record id="padilla" model="academy.teachers">
+      <field name="name">Diana Padilla</field>
+    </record>
+
+    <record id="carroll" model="academy.teachers">
+      <field name="name">Jody Carroll</field>
+    </record>
+
+    <record id="vaughn" model="academy.teachers">
+      <field name="name">Lester Vaughn</field>
+    </record>
+
+
+  </odoo>
